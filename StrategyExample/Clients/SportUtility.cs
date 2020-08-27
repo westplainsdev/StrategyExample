@@ -7,7 +7,7 @@ namespace StrategyExample.Clients
     {
         public SportUtility()
         {
-            base.SetBrakeBehavior(new BrakeWithABS());
+            SetBrakeBehavior(new BrakeWithAbs());
         }
     }
 }

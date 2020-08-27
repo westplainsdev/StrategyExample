@@ -7,12 +7,12 @@ namespace StrategyExample.Clients
     {
         public Sedan()
         {
-            base.SetBrakeBehavior(new StandardBrake());
+            SetBrakeBehavior(new StandardBrake());
         }
 
         public Sedan(IBrakeBehavior brakeBehavior)
         {
-            base.SetBrakeBehavior(brakeBehavior);
+            SetBrakeBehavior(brakeBehavior);
         }
     }
 }

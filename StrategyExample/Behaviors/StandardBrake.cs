@@ -7,9 +7,9 @@ namespace StrategyExample.Behaviors
    Interface and its implementations */
     public class StandardBrake : IBrakeBehavior
     {
-        public void brake()
+        public void Brake()
         {
-            Console.WriteLine("Standard brakes applied");
+            Console.WriteLine("Standard brakes have been applied.");
         }
     }
 }

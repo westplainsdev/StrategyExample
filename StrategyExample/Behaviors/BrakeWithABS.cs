@@ -3,11 +3,11 @@ using StrategyExample.Interfaces;
 
 namespace StrategyExample.Behaviors
 {
-    public class BrakeWithABS : IBrakeBehavior
+    public class BrakeWithAbs : IBrakeBehavior
     {
-        public void brake()
+        public void Brake()
         {
-            Console.WriteLine("ABS brakes applied");
+            Console.WriteLine("ABS brakes have been applied.");
         }
     }
 }

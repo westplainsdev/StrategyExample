@@ -7,13 +7,13 @@ namespace StrategyExample.Clients
     {
         public Truck()
         {
-            base.SetBrakeBehavior(new BrakeWithAir());
+            SetBrakeBehavior(new BrakeWithAir());
         }
 
         // one parameter constructor  
         public Truck(IBrakeBehavior brakeBehavior)
         {
-            base.SetBrakeBehavior(brakeBehavior);
+            SetBrakeBehavior(brakeBehavior);
         }
     }
 }

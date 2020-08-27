@@ -5,9 +5,9 @@ namespace StrategyExample.Behaviors
 {
     public class BadBrake : IBrakeBehavior
     {
-        public void brake()
+        public void Brake()
         {
-            Console.WriteLine("this is a bad brake");
+            Console.WriteLine("This vehicle has bad brakes.");
         }
 
     }

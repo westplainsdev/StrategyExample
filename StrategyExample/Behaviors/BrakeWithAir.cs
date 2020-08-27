@@ -5,9 +5,9 @@ namespace StrategyExample.Behaviors
 {
     public class BrakeWithAir : IBrakeBehavior
     {
-        public void brake()
+        public void Brake()
         {
-            Console.WriteLine("Air brakes applied");
+            Console.WriteLine("Air brakes have been applied.");
         }
     }
 }

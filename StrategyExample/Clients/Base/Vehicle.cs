@@ -1,3 +1,4 @@
+using System;
 using StrategyExample.Interfaces;
 
 namespace StrategyExample.Clients.Base
@@ -13,17 +14,22 @@ namespace StrategyExample.Clients.Base
 
         protected Vehicle(IBrakeBehavior brakeBehavior)
         {
-            this._brakeBehavior = brakeBehavior;
+            _brakeBehavior = brakeBehavior;
         }
 
         public void ApplyBrake()
         {
-            this._brakeBehavior.brake();
+            _brakeBehavior.Brake();
         }
 
         public void SetBrakeBehavior(IBrakeBehavior brakeType)
         {
-            this._brakeBehavior = brakeType;
+            _brakeBehavior = brakeType;
+        }
+        
+        public static void ToString(string vehicleMake, string vehicleModel)
+        {
+            Console.WriteLine($"This vehicle is a {vehicleMake} {vehicleModel}");
         }
     }
 }
